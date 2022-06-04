@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Poppins:wght@100&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+* {
+  background-color: #0F1624;
   color: white;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.introSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.aboutMeSection {
+  margin: 5%;
+}
+
+.btn {
+  background: #242F41;
+  margin: 2px;
+}
+
+.projectText {
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+p {
+  color: #8FA39E;
+  font-weight: 900;
+}
+
+#name {
+  color: #8FA39E;
+  font-size: 4rem;
+}
+
+@media only screen and (max-width: 992px) {
+  #projectCards {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .projectCard {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }  
+  #name {
+    font-size: 2rem;
   }
+  img {
+    display: none;
+    }
+    #contact {
+      margin-top: 150px;
+    }
 }
